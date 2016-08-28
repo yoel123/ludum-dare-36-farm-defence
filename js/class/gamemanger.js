@@ -191,8 +191,8 @@ yplace = function()
 	{
 		m=y_input2_p.mouse_cor;
 		//follow mouse
-		this.x = m.x;
-		this.y = m.y;
+		this.x = m.x-150;
+		this.y = m.y-120;
 		y_entity_p.move_by.call(this,0,0,0);
 		
 		gm.drag_obj = true;
