@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+
+	<title>game design</title>
+
+ 	
+
+	<style>
+	
+		#y_game
+		{
+			position:relative;
+			background: #000 none repeat scroll 0 0;
+			overflow:hidden;
+			height:500px;
+		    width: 900px;
+			
+		    color:white;
+			font-size:2em;
+			
+		    border:10px solid #333;
+		    margin:30px auto;
+		    box-shadow:5px 5px 10px #444;
+			transform-style: preserve-3d;
+			/*no select*/
+ 			-webkit-touch-callout: none; /* iOS Safari */
+		    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+		    -khtml-user-select: none;    /* Konqueror */
+		    -moz-user-select: none;      /* Firefox */
+		    -ms-user-select: none;       /* Internet Explorer/Edge */
+		    user-select: none;           /* Non-prefixed version, currently*/
+		
+			
+		}
+	
+		.entity
+		{
+			position:absolute;
+			background:blue;
+			height:50px;
+			width:50px;
+			-webkit-transform-style: preserve-3d;
+			 transform-style: preserve-3d;
+			backface-visibility: hidden;
+			-webkit-transform: translate3d(0, 0, 0);
+		   -moz-transform: translate3d(0, 0, 0);
+		   -ms-transform: translate3d(0, 0, 0);
+		   transform: translate3d(0, 0, 0); 
+			transform: rotate(0deg);
+			-moz-transform:  rotate(0deg);
+			-webkit-transform : translateZ(0); 
+	-o-transform : translateZ(0); 
+	-moz-transform : translateZ(0); 
+	transform : translateZ(0); 
+			-webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    /* or */
+    -webkit-transform: translateZ(0);
+			
+		}
+		.hitbox
+		{
+			position:absolute;
+			border:solid 1px red;
+		}
+		.game_screen
+		{
+			background-color:rgba(0, 0, 0, 0);
+			position:static !important;
+			margin:0 auto;
+		}
+		.btn
+		{
+			clear:both;
+			color:white;
+			text-decoration:none;
+			display: block;
+			margin: 25px;
+			text-align: center;
+			clear: both;
+			background-color: #2B2B2B;
+			border-radius: 15px;
+			padding: 5px;
+		}
+		.logo
+		{
+		    width: 330px;
+			height: 150px;
+			margin-left: -27px;
+		}
+		
+	
+	
+		
+	
+		
+		.yimg
+		{
+			width: 100%;
+			height: auto;
+		}
+		
+		.ycenter
+		{
+			text-align:center;
+		}
+		.yclear
+		{
+			clear:both;
+		}
+		
+	
+		h1
+		{
+			margin-top:10px;
+		}
+		.white
+		{
+		 color:white;
+		}
+		.game_manger
+		{
+			background:rgba(0, 0, 255, 0);
+		}
+		.ycredits,ywave
+		{
+			position:relative;
+			z-index:99999999999999;
+			
+			
+		}
+	</style>
+</head> 
+ 
+<body> 
+
+	<div id="y_game"></div>
+
+	
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/yoel_dom_game.js"></script>
+	<script src="js/class/game_screen.js"></script>
+	<script src="js/class/bullet.js"></script>
+	<script src="js/class/aoe.js"></script>
+	<script src="js/class/enemy.js"></script>
+	<script src="js/class/plant.js"></script>
+	<script src="js/class/trap.js"></script>
+	<script src="js/class/sign.js"></script>
+	<script src="js/class/char.js"></script>
+	<script src="js/class/playerb.js"></script>
+	<script src="js/class/gamemangerb.js"></script>
+
+	
+	
+	<script src="js/main.js"></script><!--last to run-->
+	
+	<script>
+		main();
+	</script>
+
+
+</body> 
+</html>
