@@ -2,8 +2,12 @@ this is my ludum dare 26 compo game submission.
 
 compo post:
 
+http://ludumdare.com/compo/ludum-dare-36/?action=preview&uid=80283
+
 
 demo:
+
+https://cdn.rawgit.com/yoel123/ludum-dare-36-farm-defence/master/index.html
 
 contact form:
 
