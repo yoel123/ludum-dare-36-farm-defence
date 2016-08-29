@@ -7,7 +7,7 @@ http://ludumdare.com/compo/ludum-dare-36/?action=preview&uid=80283
 
 demo:
 
-https://cdn.rawgit.com/yoel123/ludum-dare-36-farm-defence/master/indexc.html
+https://cdn.rawgit.com/yoel123/ludum-dare-36-farm-defence/master/indexe.html
 
 contact form:
 
